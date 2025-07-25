@@ -79,3 +79,24 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('unique-id').textContent = `Identificador único: ${gerarIdentificadorUnico()}`;
   iniciarSlider();
 });
+
+function randomizarrr() {
+  const links = [
+    "https://wa.me/5527999860405?text=Olá%2C%20tenho%20interesse%20em%20soluções%20de%20VPS%20e%20ERP.",
+    "https://hostinger.com.br/?REFERRALCODE=1VICTOR444",
+    "https://humorrandompiada02.vercel.app/",
+    "https://randomico02.vercel.app/",
+    "https://shoppingrandom01.vercel.app/",
+    "https://carro.wuaze.com/conferir/",
+    "https://www.youtube.com/@gamenologia",
+    "https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g",
+    "https://geocredibnkvitoria.com/",
+    "https://brasilbrasileiross.blogspot.com/"
+    // Adicione mais links aqui se quiser
+  ];
+  const escolher = links[Math.floor(Math.random() * links.length)];
+  const ok = document.getElementById('ok');
+  if (ok) ok.href = escolher;
+}
+setInterval(randomizarrr, 800);
+
