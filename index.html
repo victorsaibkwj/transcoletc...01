@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notícias de Vitória, Vila Velha, Serra, Guarapari e Transcol</title>
+  <meta name="description" content="Acompanhe as últimas notícias de Vitória, Vila Velha, Serra, Guarapari e Transcol." />
+  <meta name="keywords" content="notícias vitória, vila velha, serra, guarapari, espírito santo, transcol" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: purple;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: #0057b8;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    header p {
+      color: #666;
+      margin-top: 0;
+    }
+    #slider {
+      max-width: 900px;
+      margin: 20px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      height: 300px;
+    }
+    #slider img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    #slider img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+    section.city-news {
+      margin-top: 30px;
+    }
+    section.city-news h2 {
+      color: #0077cc;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    ul.news-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.news-list li {
+      margin-bottom: 12px;
+    }
+    ul.news-list li a {
+      text-decoration: none;
+      color: #0057b8;
+      font-weight: bold;
+    }
+    ul.news-list li a:hover {
+      text-decoration: underline;
+    }
+    time {
+      color: #999;
+      font-size: 0.9rem;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #777;
+      text-align: center;
+    }
+    #unique-id {
+      background: #222;
+      color: #fff;
+      font-family: monospace;
+      padding: 16px;
+      margin-top: 40px;
+      border-radius: 6px;
+      word-wrap: break-word;
+      font-size: 0.95rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Notícias do Espírito Santo</h1>
+    <p>Acompanhe as últimas atualizações das cidades de Vitória, Vila Velha, Serra, Guarapari e Transcol.</p>
+  </header>
+
+  <div id="slider">
+    <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari4.jpeg" alt="Imagem 1" class="active">
+    <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari5.jpeg" alt="Imagem 2">
+    <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari6.jpeg" alt="Imagem 3">
+  </div>
+
+  <main id="news-container"></main>
+
+  <footer>
+    <p>&copy; Notícias Capixabas – Atualizado em <span id="data-atualizacao"></span></p>
+    <div id="unique-id" aria-label="Identificador único"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
